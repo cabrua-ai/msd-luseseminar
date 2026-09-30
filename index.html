@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luseseminar i Bergen 19/11-25 | MSD Animal Health</title>
+<meta name="description" content="Årlig luseseminar med hovedfokus på fôrbaserte lusemidler. Hotel Norge, Bergen, 19. november 2025 – eller digitalt via streaming. Gratis, inkludert lunsj og kaffe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #13203a;
+    --navy-2: #1b2b4b;
+    --teal: #2f7a70;
+    --teal-light: #e6f2ef;
+    --blue: #1f4fa8;
+    --blue-light: #76a7f5;
+    --ink: #13203a;
+    --muted: #5b6780;
+    --line: #e3e8f0;
+    --white: #ffffff;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    background: var(--navy);
+    color: var(--white);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+
+  .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    background:
+      radial-gradient(1200px 500px at 85% -10%, rgba(47,122,112,.35), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgba(31,79,168,.35), transparent 60%),
+      var(--navy);
+    padding: 40px 0 56px;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .banner {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0,0,0,.35);
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #9fd3c9;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: clamp(32px, 4.6vw, 52px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    margin-bottom: 18px;
+  }
+  .lead {
+    font-size: 18px;
+    color: #d6deeb;
+    max-width: 34em;
+    margin-bottom: 26px;
+  }
+  .lead strong { color: var(--white); }
+
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  .fact { display: flex; align-items: center; gap: 10px; }
+  .fact svg { width: 22px; height: 22px; fill: #9fd3c9; flex-shrink: 0; }
+
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 200px;
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1.3;
+    transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+  }
+  .btn small { font-weight: 500; font-size: 14px; opacity: .9; }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.25); filter: brightness(1.06); }
+  .btn:focus-visible { outline: 3px solid #9fd3c9; outline-offset: 3px; }
+  .btn-primary { background: var(--blue); color: var(--white); }
+  .btn-secondary { background: var(--blue-light); color: var(--navy); }
+
+  /* ---------- MAIN ---------- */
+  .main {
+    background: #f5f7fb;
+    color: var(--ink);
+    padding: 64px 0 72px;
+  }
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: 0 6px 20px rgba(19,32,58,.05);
+  }
+  .info-stack { display: grid; gap: 20px; }
+  .info h3 {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 6px;
+  }
+  .info p { color: var(--ink); }
+  .info + .info { padding-top: 20px; border-top: 1px solid var(--line); }
+  .price {
+    font-weight: 700;
+    background: var(--teal-light);
+    color: var(--teal);
+    border-radius: 10px;
+    padding: 14px 18px;
+  }
+
+  .signup {
+    background: var(--teal);
+    color: var(--white);
+    border: 0;
+    text-align: center;
+  }
+  .signup h2 { font-size: 26px; font-weight: 800; margin-bottom: 2px; }
+  .signup p { margin-bottom: 20px; color: #e3f3ef; font-weight: 500; }
+  .signup .btn { width: 100%; margin-top: 10px; text-align: center; }
+
+  /* Program */
+  .program h2 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    margin-bottom: 20px;
+  }
+  .timeline { list-style: none; }
+  .timeline li {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .timeline li:last-child { border-bottom: 0; }
+  .time {
+    font-weight: 800;
+    color: var(--blue);
+    font-variant-numeric: tabular-nums;
+  }
+  .title { font-weight: 600; }
+  .speaker { display: block; color: var(--muted); font-size: 15px; font-weight: 500; }
+  .timeline li.break .title { color: var(--muted); font-weight: 500; }
+  .timeline li.break .time { color: var(--muted); }
+  .section-label {
+    display: block !important;
+    margin: 18px 0 4px;
+    padding: 10px 14px !important;
+    background: var(--teal-light);
+    color: var(--teal);
+    border-radius: 8px;
+    border-bottom: 0 !important;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: var(--white);
+    border-top: 1px solid var(--line);
+    padding: 28px 0;
+  }
+  footer img { width: 200px; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px) {
+    .hero-grid, .main-grid { grid-template-columns: 1fr; gap: 32px; }
+    .hero { padding: 24px 0 40px; }
+    .main { padding: 40px 0 48px; }
+    .signup { display: none; }
+  }
+  @media (max-width: 520px) {
+    body { font-size: 15px; }
+    .lead { font-size: 16px; }
+    .card { padding: 22px 18px; }
+    .btn { width: 100%; }
+    .timeline li { grid-template-columns: 54px 1fr; gap: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="banner">
+      <img src="msd-luseseminar-banner.png" alt="MSD Animal Health – Årlig luseseminar" width="1600" height="941">
+    </div>
+
+    <div>
+      <h1>Luseseminar i Bergen 19/11-25</h1>
+      <p class="lead">BLI MED PÅ VÅRT <strong>ÅRLIGE LUSESEMINAR</strong> med hovedfokus på fôrbaserte lusemidler.</p>
+
+      <div class="facts">
+        <div class="fact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V2zm12 7H5v11h14V9zM7 11h2v2H7v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm-8 4h2v2H7v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z"/></svg>
+          <span>19/11 2025 · Kl. 10:00-16:00</span>
+        </div>
+        <div class="fact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          <span>Hotel Norge, Bergen</span>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <!-- Sett inn påmeldingslenke for fysisk oppmøte -->
+        <a class="btn btn-primary" href="#">FYSISK <small>oppmøte &gt;&gt;</small></a>
+        <!-- Sett inn påmeldingslenke for streaming -->
+        <a class="btn btn-secondary" href="#">STREAMING <small>web &gt;&gt;</small></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container main-grid">
+
+    <aside class="info-stack">
+      <div class="card signup">
+        <h2>PÅMELDING!</h2>
+        <p>Hotel Norge eller digitalt</p>
+        <a class="btn btn-primary" href="#">FYSISK <small>oppmøte &gt;&gt;</small></a>
+        <a class="btn btn-secondary" href="#">STREAMING <small>web &gt;&gt;</small></a>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <h3>Seminaret er på Hotel Norge</h3>
+          <p>Adresse: Nedre Ole Bulls plass 4, 5012 Bergen.</p>
+        </div>
+        <div class="info">
+          <h3>Streaming</h3>
+          <p>Seminaret streames slik at det er mulig å følge med fra hele landet. Påmelding er nødvendig.</p>
+        </div>
+        <div class="info">
+          <h3>Frist</h3>
+          <p>FRIST fysisk seminar: 7. november 2025<br>FRIST digitalt: 17. november 2025</p>
+        </div>
+        <div class="info">
+          <p class="price">GRATIS seminar, inkludert lunsj og kaffe.</p>
+        </div>
+      </div>
+    </aside>
+
+    <section class="card program" aria-labelledby="program-title">
+      <h2 id="program-title">Program</h2>
+      <ol class="timeline">
+        <li><span class="time">10:00</span><span class="title">Velkommen og introduksjon <span class="speaker">Lene Høgset</span></span></li>
+        <li><span class="time">10:15</span><span class="title">Hva kan man forvente av effekt fra fôrbaserte lusemidler? <span class="speaker">Tony Chen, Manolin</span></span></li>
+        <li class="break"><span class="time">11:00</span><span class="title">Kaffepause</span></li>
+        <li><span class="time">11:30</span><span class="title">Miljøovervåkning av fôrbaserte lusemidler fra oppdretters ståsted <span class="speaker">Remi Mathisen, Nordlaks</span></span></li>
+        <li class="break"><span class="time">12:15</span><span class="title">Lunsj</span></li>
+        <li class="section-label">For fiskehelsepersonell</li>
+        <li><span class="time">13:15</span><span class="title">Bærekraftig bruk av fôrbasert avlusning med fokus på miljø <span class="speaker">Niels Petter Maaseide</span></span></li>
+        <li><span class="time">14:00</span><span class="title">Hvordan sikre best mulig effekt fra fôrbaserte lusemidler og samtidig hensynta myndighetenes krav <span class="speaker">Lene Høgset</span></span></li>
+        <li class="break"><span class="time">14:30</span><span class="title">Kaffepause</span></li>
+        <li><span class="time">14:45</span><span class="title">Fôrbaserte lusemidler som påslagshemmer; måling av effekt og smittestudier <span class="speaker">Lene Høgset</span></span></li>
+        <li><span class="time">15:30</span><span class="title">Spørsmål og diskusjon <span class="speaker">Alle</span></span></li>
+        <li><span class="time">16:00</span><span class="title">Avslutning og oppsummering <span class="speaker">Lene Høgset</span></span></li>
+      </ol>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <img src="msd-animal-health-logo.png" alt="MSD Animal Health" width="546" height="210">
+  </div>
+</footer>
+
+</body>
+</html>
