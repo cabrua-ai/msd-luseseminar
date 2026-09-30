@@ -188,18 +188,17 @@
   .timeline li.break .time { color: var(--muted); }
   .section-label {
     display: block !important;
-    margin: 26px 0 8px;
-    padding: 16px 20px !important;
-    background: var(--teal);
-    color: var(--white);
-    border-radius: 10px;
+    margin: 22px 0 6px;
+    padding: 10px 16px !important;
+    background: var(--teal-light);
+    color: var(--teal);
+    border-left: 4px solid var(--teal);
+    border-radius: 6px;
     border-bottom: 0 !important;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 800;
-    letter-spacing: .02em;
+    letter-spacing: .03em;
     text-transform: uppercase;
-    text-align: center;
-    box-shadow: 0 6px 16px rgba(47,122,112,.25);
   }
 
   /* ---------- FOOTER ---------- */
@@ -208,7 +207,7 @@
     border-top: 1px solid var(--line);
     padding: 28px 0;
   }
-  footer img { width: 200px; }
+  footer img { width: 240px; }
 
   /* ---------- RESPONSIVE ---------- */
   @media (max-width: 900px) {
@@ -224,7 +223,7 @@
     .card { padding: 22px 18px; }
     .btn { width: 100%; }
     .timeline li { grid-template-columns: 60px 1fr; gap: 12px; }
-    .section-label { font-size: 19px; }
+    .section-label { font-size: 17px; }
   }
 </style>
 </head>
@@ -283,7 +282,7 @@
         </div>
         <div class="info">
           <h3>Frist</h3>
-          <p>FRIST fysisk seminar: 7. november 2025<br>FRIST digitalt: 17. november 2025</p>
+          <p>FRIST fysisk seminar: <strong>7. november 2025</strong><br>FRIST digitalt: <strong>17. november 2025</strong></p>
         </div>
         <div class="info">
           <p class="price">GRATIS seminar, inkludert lunsj og kaffe.</p>
@@ -314,7 +313,7 @@
 
 <footer>
   <div class="container">
-    <img src="msd-animal-health-logo.png" alt="MSD Animal Health" width="546" height="210">
+    <img src="msd-animal-health-logo.png" alt="MSD Animal Health" width="428" height="161">
   </div>
 </footer>
 
