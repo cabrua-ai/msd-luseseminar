@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Luseseminar i Bergen 18/11-26 | MSD Animal Health</title>
 <meta name="description" content="Årlig luseseminar med hovedfokus på fôrbaserte lusemidler. Hotel Norge, Bergen, 18. november 2026 – eller digitalt via streaming. Gratis, inkludert lunsj og kaffe.">
+<link rel="alternate" hreflang="no" href="https://msd.seminarerinorge.no/">
+<link rel="alternate" hreflang="en" href="https://msd.seminarerinorge.no/en/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -37,6 +39,15 @@
   a { color: inherit; }
 
   .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- LANGUAGE SWITCH ---------- */
+  .lang-bar { display: flex; justify-content: flex-end; margin-bottom: 16px; }
+  .lang-switch { display: flex; gap: 4px; font-size: 15px; font-weight: 700; }
+  .lang-switch a, .lang-switch span { padding: 6px 12px; border-radius: 8px; text-decoration: none; }
+  .lang-switch a { color: #d6deeb; border: 1px solid rgba(255,255,255,.25); }
+  .lang-switch a:hover { color: var(--white); border-color: #9fd3c9; }
+  .lang-switch span { color: var(--navy); background: #9fd3c9; }
+  .note { margin-top: 18px; color: var(--muted); font-size: 17px; }
 
   /* ---------- HERO ---------- */
   .hero {
@@ -230,6 +241,12 @@
 <body>
 
 <header class="hero">
+  <div class="container lang-bar">
+    <nav class="lang-switch" aria-label="Språk / Language">
+      <span aria-current="true">Norsk</span>
+      <a href="/en/" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
   <div class="container hero-grid">
     <div class="banner">
       <img src="msd-luseseminar-banner.png" alt="MSD Animal Health – Årlig luseseminar" width="1600" height="941">
@@ -242,7 +259,7 @@
       <div class="facts">
         <div class="fact">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V2zm12 7H5v11h14V9zM7 11h2v2H7v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm-8 4h2v2H7v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z"/></svg>
-          <span>18/11 2026 · Kl. 10:00-16:00</span>
+          <span>18/11 2026 · Kl. 10:00-15:30</span>
         </div>
         <div class="fact">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
@@ -291,23 +308,21 @@
     </aside>
 
     <section class="card program" aria-labelledby="program-title">
-      <h2 id="program-title">Program (kommer)</h2>
+      <h2 id="program-title">Program</h2>
       <ol class="timeline">
-        <li><span class="time">10:00</span><span class="title">Velkommen og introduksjon <span class="speaker">Lene Høgset</span></span></li>
-        <!-- Skjult til oppdatert program er klart
-        <li><span class="time">10:15</span><span class="title">Hva kan man forvente av effekt fra fôrbaserte lusemidler? <span class="speaker">Tony Chen, Manolin</span></span></li>
-        <li class="break"><span class="time">11:00</span><span class="title">Kaffepause</span></li>
-        <li><span class="time">11:30</span><span class="title">Miljøovervåkning av fôrbaserte lusemidler fra oppdretters ståsted <span class="speaker">Remi Mathisen, Nordlaks</span></span></li>
-        <li class="break"><span class="time">12:15</span><span class="title">Lunsj</span></li>
+        <li><span class="time">10:00</span><span class="title">Kaffe og velkommen <span class="speaker">Lene Høgset, MSD Animal Health</span></span></li>
+        <li><span class="time">10:15</span><span class="title">Ulike metoder for evaluering av fôrbasert avlusning, inkludert ubehandlet kontrollgruppe <span class="speaker">Øystein Markussen, DNV Aquaculture and Ocean Health</span></span></li>
+        <li><span class="time">11:00</span><span class="title">Sea lice management use in Scottish aquaculture <span class="speaker">Ronnie Soutar, Scottish Seafarm</span></span></li>
+        <li><span class="time">11:30</span><span class="title">Big data in the small world of sea lice <span class="speaker">Manolin</span></span></li>
+        <li class="break"><span class="time">12:00</span><span class="title">Lunsj</span></li>
         <li class="section-label">For fiskehelsepersonell</li>
-        <li><span class="time">13:15</span><span class="title">Bærekraftig bruk av fôrbasert avlusning med fokus på miljø <span class="speaker">Niels Petter Maaseide</span></span></li>
-        <li><span class="time">14:00</span><span class="title">Hvordan sikre best mulig effekt fra fôrbaserte lusemidler og samtidig hensynta myndighetenes krav <span class="speaker">Lene Høgset</span></span></li>
-        <li class="break"><span class="time">14:30</span><span class="title">Kaffepause</span></li>
-        <li><span class="time">14:45</span><span class="title">Fôrbaserte lusemidler som påslagshemmer; måling av effekt og smittestudier <span class="speaker">Lene Høgset</span></span></li>
-        <li><span class="time">15:30</span><span class="title">Spørsmål og diskusjon <span class="speaker">Alle</span></span></li>
-        <li><span class="time">16:00</span><span class="title">Avslutning og oppsummering <span class="speaker">Lene Høgset</span></span></li>
-        -->
+        <li><span class="time">13:00</span><span class="title">Masteroppgave med smittestudie med ulike doser av et fôrbasert lusemiddel <span class="speaker">Carina Nordland</span></span></li>
+        <li><span class="time">13:30</span><span class="title">SSP: MSD's oppfølgingsprogram for fôrbasert avlusningmiddel – erfaringsdata <span class="speaker">Niels P. Maaseide</span></span></li>
+        <li class="break"><span class="time">14:15</span><span class="title">Kaffepause</span></li>
+        <li><span class="time">14:30</span><span class="title">Forsvarlighetvurdering ifm reseptskriving, følsomhetstester og diskusjon <span class="speaker">Lene Høgset</span></span></li>
+        <li><span class="time">15:15</span><span class="title">Takk for nå og vel hjem</span></li>
       </ol>
+      <p class="note">Det er lettere bespisning, kaffe, te og smoothie utenfor møterommet for de som vil ha en matbit og en prat før vi går hjem.</p>
     </section>
 
   </div>
